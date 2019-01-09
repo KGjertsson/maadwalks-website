@@ -1,6 +1,5 @@
 <template>
     <v-toolbar app>
-      <v-toolbar-side-icon></v-toolbar-side-icon>
       <v-toolbar-title class="headline text-uppercase">
         <span>Maadwalk</span>
         <span class="font-weight-light">Games</span>
