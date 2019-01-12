@@ -1,11 +1,14 @@
 <template>
-  <v-carousel hide-delimiters hide-controls height=937>
-    <v-carousel-item
-      v-for="(item,i) in items"
-      :key="i"
-      :src="item.src"
-    ></v-carousel-item>
-  </v-carousel>
+  <v-container-fluid>
+    <v-carousel hide-delimiters hide-controls height=937>
+      <v-carousel-item
+        v-for="(item,i) in items"
+        :key="i"
+        :src="item.src"
+      ></v-carousel-item>
+    </v-carousel>
+    <h1>Feed from google play store</h1>
+  </v-container-fluid>
 </template>
 
 <script>
