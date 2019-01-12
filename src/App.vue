@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <maadheader/>
+    <MaadHeader/>
     <v-content>
       <v-container fluid>
         <v-fade-transition mode="out-in">
@@ -9,19 +9,19 @@
       </v-container>
     </v-content>
 
-    <maadfooter/>
+    <MaadFooter/>
   </v-app>
 </template>
 
 <script>
-import maadheader from './components/maadheader'
-import maadfooter from './components/maadfooter'
+import MaadHeader from './components/MaadHeader'
+import MaadFooter from './components/MaadFooter'
 
 export default {
   name: 'App',
   components: {
-    maadheader,
-    maadfooter,
+    MaadHeader,
+    MaadFooter,
   },
   data () {
     return {

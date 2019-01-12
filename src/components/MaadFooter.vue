@@ -9,8 +9,8 @@
         tile
         class="lighten-1 text-xs-center"
         >
-        <v-btn flat large>Contact</v-btn>
-        <v-btn flat large>Data Policy</v-btn>
+        <v-btn v-on:click="$router.push('contact')" flat large>Contact</v-btn>
+        <v-btn v-on:click="$router.push('data-policy')" flat large>Data Policy</v-btn>
 
         <v-divider></v-divider>
 
