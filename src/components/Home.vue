@@ -5,6 +5,8 @@
         v-for="(item,i) in items"
         :key="i"
         :src="item.src"
+        reverse-transition="fade"
+        transition="fade"
       ></v-carousel-item>
     </v-carousel>
     <h1>Feed from google play store</h1>
@@ -17,16 +19,16 @@
       return {
         items: [
           {
-            src: 'https://pbs.twimg.com/profile_images/518515693763850241/bfyo0t3b.jpeg'
+            src: 'https://i.imgur.com/EdAGGFS.jpg'
           },
           {
-            src: 'https://imageproxy.b17g.services/convert/resize/400x225/source/https%3A%2F%2Faman-assets.b17g.net%2F56546dd9fca38fc7b50007b5%2FKjell1.jpg%3F1'
+            src: 'https://pixelz.cc/wp-content/uploads/2017/12/mercedes-benz-amg-gt-r-uhd-4k-wallpaper.jpg'
           },
           {
-            src: 'https://imageproxy.b17g.services/?quality=70&resize=1200x630&shape=cut&source=https%3A%2F%2Faman-assets.b17g.net%2F564c90bab9a9f600d90004fe%2Ffb1024_kjell2.png%3F4'
+            src: 'https://images8.alphacoders.com/712/712496.jpg'
           },
           {
-            src: 'http://3.bp.blogspot.com/_Q5pm3gQLKj8/SZ5xl1033YI/AAAAAAAAAIw/NWywlVYsBc8/s400/birgitta_peter.jpg'
+            src: 'https://gameranx.com/wp-content/uploads/2017/03/Prey-4K-Wallpaper.jpg'
           }
         ]
       }
