@@ -1,16 +1,7 @@
 <template>
   <v-container fluid grid-list-xl>
-    <v-layout align-end justify-center row>
-      <h1>
-        The Team.
-        <sup>TM</sup>
-      </h1>
-    </v-layout>
     <v-layout align-end justify-center row style="margin: 10px">
-      <v-img
-        src="https://liquipedia.net/commons/images/thumb/7/75/Alliance_TI3.jpg/482px-Alliance_TI3.jpg"
-        aspect-ratio="3"
-      ></v-img>
+      <v-img src="http://efdreams.com/data_images/dreams/people/people-02.jpg" aspect-ratio="3"></v-img>
     </v-layout>
 
     <v-layout align-end justify-center row fill-height>
@@ -21,7 +12,7 @@
 
     <v-layout justify-center>
       <v-flex xs12 sm12>
-        <v-card style="background-color: inherit">
+        <v-card flat style="background-color: transparent">
           <v-container fluid grid-list-md>
             <v-layout row center>
               <v-flex
