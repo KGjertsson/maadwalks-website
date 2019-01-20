@@ -1,6 +1,6 @@
 <template>
-  <v-container fluid grid-list-xl>
-    <v-layout align-end justify-center row style="margin: 10px">
+  <v-container style="padding: 0px" fluid grid-list-xl>
+    <v-layout align-end justify-center row>
       <v-img src="http://efdreams.com/data_images/dreams/people/people-02.jpg" aspect-ratio="3"></v-img>
     </v-layout>
 
