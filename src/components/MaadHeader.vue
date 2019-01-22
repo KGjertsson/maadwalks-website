@@ -16,22 +16,48 @@
       max-height="80"
       max-width="200"
     ></v-img>
-
     <v-spacer></v-spacer>
-    <div>
-      <v-btn v-on:click="$router.push('mercenary-td')" flat large>Mercenary TD</v-btn>
-      <v-btn v-on:click="$router.push('about')" flat large>About</v-btn>
-      <v-btn v-on:click="$router.push('team')" flat large>Team</v-btn>
-      <v-btn v-on:click="$router.push('contact')" flat large>Contact</v-btn>
-    </div>
+
+    <v-toolbar-items class="hidden-sm-and-down">
+      <v-btn
+        v-for="item in menu"
+        :key="item.title"
+        :to="item.link"
+        flat
+        v-on:click="$router.push(item.route)"
+      >{{ item.title }}</v-btn>
+    </v-toolbar-items>
+
+    <v-menu class="hidden-md-and-up">
+      <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
+      <v-list>
+        <v-list-tile v-for="item in menu" :key="item.title" v-on:click="$router.push(item.route)">
+          <v-list-tile-content>
+            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+    </v-menu>
   </v-toolbar>
 </template>
 
 <script>
 export default {
-  name: "Header",
-  props: {
-    msg: String
+  data() {
+    return {
+      menu: [
+        { title: "Mercenary TD", route: "mercenary-td" },
+        { title: "About", route: "about" },
+        { title: "Team", route: "team" },
+        { title: "Contact", route: "contact" }
+      ]
+    };
+  },
+
+  methods: {
+    menuItems() {
+      return this.menu;
+    }
   }
 };
 </script>
