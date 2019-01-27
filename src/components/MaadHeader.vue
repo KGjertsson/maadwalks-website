@@ -8,14 +8,6 @@
       <span>Maadwalk</span>
       <span class="font-weight-light">Games</span>
     </v-toolbar-title>
-    <v-img
-      style="cursor: pointer"
-      v-on:click="$router.push('/')"
-      src="https://lh3.googleusercontent.com/Zxqq87uliNDCcPAgaH8j8deJ8EORiICC482_cP6pJJSi5x6RIoZxE90QCqdFmpwzMfu0"
-      contain
-      max-height="80"
-      max-width="200"
-    ></v-img>
     <v-spacer></v-spacer>
 
     <v-toolbar-items class="hidden-sm-and-down">
