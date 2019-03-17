@@ -1,6 +1,7 @@
 <template>
   <v-app dark>
     <MaadHeader/>
+
     <v-content>
       <v-container fluid style="padding: 0px">
         <v-fade-transition mode="out-in">
@@ -14,23 +15,25 @@
 </template>
 
 <script>
-import MaadHeader from './components/MaadHeader'
-import MaadFooter from './components/MaadFooter'
+import MaadHeader from "./components/MaadHeader";
+import MaadFooter from "./components/MaadFooter";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     MaadHeader,
-    MaadFooter,
+    MaadFooter
   },
-  data () {
+  data() {
     return {
       //
-    }
+    };
   }
-}
+};
 </script>
 
 <style>
-html { overflow-y: auto }
+html {
+  overflow-y: auto;
+}
 </style>

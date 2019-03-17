@@ -1,118 +1,108 @@
 
 <template>
-  <!-- http://play.google.com/store/apps/details?id=com.google.android.apps.maps -->
-  <v-container
-    fluid
-    style="padding: 0px"
-  >
+  <v-container fluid style="padding: 0px">
+    <v-layout align-end justify-center row>
+      <v-img :src="logo" style="height: 100vh"></v-img>
+    </v-layout>
     <v-layout align-end justify-center row>
       <v-img src="https://i.imgur.com/EdAGGFS.jpg" style="height: 100vh">
-        <v-btn large onclick="location.href='https://play.google.com/store/apps/details?id=com.MAADWALK.Mercenary';">Play now</v-btn>
+        <v-btn
+          large
+          onclick="location.href='https://play.google.com/store/apps/details?id=com.MAADWALK.Mercenary';"
+        >Play now</v-btn>
       </v-img>
     </v-layout>
 
     <v-layout justify-center>
-        <v-flex xs12 sm6>
-          <v-card flat style="background-color: transparent">
-            <v-container
-              fluid
-              grid-list-md
-            >
-              <v-layout row wrap>
-                <v-flex
-                  v-for="card in cards"
-                  v-bind="{ [`xs${card.flex}`]: true }"
-                  :key="card.title"
-                >
-                  <v-card>
-                    <v-img
-                      :src="card.src"
-                      height="200px"
-                    >
-                      <v-container
-                        fill-height
-                        fluid
-                        pa-2
-                      >
-                        <v-layout fill-height>
-                          <v-flex xs12 align-end flexbox>
-                            <span class="headline white--text" v-text="card.title"></span>
-                          </v-flex>
-                        </v-layout>
-                      </v-container>
-                    </v-img>
+      <v-flex xs12 sm6>
+        <v-card flat style="background-color: transparent">
+          <v-container fluid grid-list-md>
+            <v-layout row wrap>
+              <v-flex v-for="card in cards" v-bind="{ [`xs${card.flex}`]: true }" :key="card.title">
+                <v-card>
+                  <v-img :src="card.src" height="200px">
+                    <v-container fill-height fluid pa-2>
+                      <v-layout fill-height>
+                        <v-flex xs12 align-end flexbox>
+                          <span class="headline white--text" v-text="card.title"></span>
+                        </v-flex>
+                      </v-layout>
+                    </v-container>
+                  </v-img>
 
-                    <v-card-actions>
-                      <v-spacer></v-spacer>
-                      <v-btn icon>
-                        <v-icon>favorite</v-icon>
-                      </v-btn>
-                      <v-btn icon>
-                        <v-icon>bookmark</v-icon>
-                      </v-btn>
-                      <v-btn icon>
-                        <v-icon>share</v-icon>
-                      </v-btn>
-                    </v-card-actions>
-                  </v-card>
-                </v-flex>
-              </v-layout>
-              <v-layout row wrap>
-                <v-flex
-                  v-for="card in cards"
-                  v-bind="{ [`xs${card.flex}`]: true }"
-                  :key="card.title"
-                >
-                  <v-card>
-                    <v-img
-                      :src="card.src"
-                      height="200px"
-                    >
-                      <v-container
-                        fill-height
-                        fluid
-                        pa-2
-                      >
-                        <v-layout fill-height>
-                          <v-flex xs12 align-end flexbox>
-                            <span class="headline white--text" v-text="card.title"></span>
-                          </v-flex>
-                        </v-layout>
-                      </v-container>
-                    </v-img>
+                  <v-card-actions>
+                    <v-spacer></v-spacer>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>bookmark</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>share</v-icon>
+                    </v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-flex>
+            </v-layout>
+            <v-layout row wrap>
+              <v-flex v-for="card in cards" v-bind="{ [`xs${card.flex}`]: true }" :key="card.title">
+                <v-card>
+                  <v-img :src="card.src" height="200px">
+                    <v-container fill-height fluid pa-2>
+                      <v-layout fill-height>
+                        <v-flex xs12 align-end flexbox>
+                          <span class="headline white--text" v-text="card.title"></span>
+                        </v-flex>
+                      </v-layout>
+                    </v-container>
+                  </v-img>
 
-                    <v-card-actions>
-                      <v-spacer></v-spacer>
-                      <v-btn icon>
-                        <v-icon>favorite</v-icon>
-                      </v-btn>
-                      <v-btn icon>
-                        <v-icon>bookmark</v-icon>
-                      </v-btn>
-                      <v-btn icon>
-                        <v-icon>share</v-icon>
-                      </v-btn>
-                    </v-card-actions>
-                  </v-card>
-                </v-flex>
-              </v-layout>
-            </v-container>            
-          </v-card>
-        </v-flex>
-      </v-layout>
+                  <v-card-actions>
+                    <v-spacer></v-spacer>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>bookmark</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>share</v-icon>
+                    </v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-container>
+        </v-card>
+      </v-flex>
+    </v-layout>
   </v-container>
 </template>
 
 <script>
-  export default {
-    data: () => ({
-      cards: [
-        { title: 'Mercenary TD', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 12 },
-        { title: 'Maadwalk Games', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },
-        { title: 'Interview with CEO', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 }
-      ]
-    })
-  }
+export default {
+  data: () => ({
+    cards: [
+      {
+        title: "Mercenary TD",
+        src: "https://cdn.vuetifyjs.com/images/cards/house.jpg",
+        flex: 12
+      },
+      {
+        title: "Maadwalk Games",
+        src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
+        flex: 6
+      },
+      {
+        title: "Interview with CEO",
+        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+        flex: 6
+      }
+    ],
+    logo: require("@/assets/2996.jpg")
+  })
+};
 </script>
 
 <style>
