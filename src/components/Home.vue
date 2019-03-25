@@ -1,7 +1,7 @@
 
 <template>
   <v-container fluid style="padding: 0px">
-    <v-img :src="logo" style="height: 100vh"></v-img>
+    <v-img :src="background" style="height: 100vh"></v-img>
 
     <v-layout align-end justify-center row>
       <v-img :src="mercenary_image" style="height: 100vh">
@@ -17,7 +17,7 @@
 <script>
 export default {
   data: () => ({
-    logo: require("@/assets/2996.jpg"),
+    background: require("@/assets/16503_edited.png"),
     mercenary_image: require("@/assets/screen-4.jpg")
   })
 };

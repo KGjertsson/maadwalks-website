@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar app>
+  <v-toolbar>
     <v-toolbar-title
       style="cursor: pointer"
       class="headline text-uppercase"
