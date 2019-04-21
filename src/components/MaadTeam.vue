@@ -15,7 +15,7 @@
 
             <v-layout justify-center row wrap>
               <v-flex v-for="card in cardsRowOne" :key="card.title" shrink style="padding: 20px">
-                <v-card>
+                <v-card width="230px">
                   <v-container fill-height pa-2>
                     <v-layout fill-height>
                       <v-flex xs12 align-end flexbox>
@@ -40,7 +40,7 @@
 
             <v-layout justify-center row wrap>
               <v-flex v-for="card in cardsRowTwo" :key="card.title" shrink style="padding: 20px">
-                <v-card>
+                <v-card width="230px">
                   <v-container fill-height pa-2>
                     <v-layout fill-height>
                       <v-flex xs12 align-end flexbox>
@@ -76,29 +76,29 @@ export default {
       {
         name: "Alex Lindström",
         title: "Game Developer",
-        src: require("@/assets/Kjell_tv.jpg")
+        src: require("@/assets/jag.jpg")
       },
       {
         name: "Markus Winroth",
         title: "Game Developer",
-        src: require("@/assets/Kjell_tv.jpg")
+        src: require("@/assets/jag.jpg")
       },
       {
         name: "Daniel Karlsson",
         title: "Game Developer",
-        src: require("@/assets/Kjell_tv.jpg")
+        src: require("@/assets/jag.jpg")
       }
     ],
     cardsRowTwo: [
       {
         name: "Anton Anderzén",
         title: "Game Developer",
-        src: require("@/assets/Kjell_tv.jpg")
+        src: require("@/assets/jag.jpg")
       },
       {
         name: "Konrad Gjertsson",
         title: "Web Developer",
-        src: require("@/assets/Kjell_tv.jpg")
+        src: require("@/assets/jag.jpg")
       }
     ],
     background: require("@/assets/16503_edited.png")

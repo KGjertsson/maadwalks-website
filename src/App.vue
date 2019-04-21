@@ -3,7 +3,7 @@
     <MaadHeader/>
 
     <v-content>
-      <v-container fluid style="padding: 0px">
+      <v-container fluid style="padding: 0px" fill-height>
         <v-fade-transition mode="out-in">
           <router-view></router-view>
         </v-fade-transition>
