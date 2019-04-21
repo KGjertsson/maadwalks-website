@@ -1,6 +1,6 @@
 <template>
-  <v-img :src="background">
-    <v-layout align-center justify-center row fill-height>
+  <v-img :src="background" style="height: 100% ">
+    <v-layout align-center justify-center row fill-height style="height: 100%">
       <v-flex xs8 sm6>
         <v-card flat tile style="background-color: transparent;">
           <h1>Mercenary TD</h1>
@@ -26,3 +26,6 @@ export default {
   })
 };
 </script>
+
+<style scoped>
+</style>

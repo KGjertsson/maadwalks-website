@@ -1,6 +1,6 @@
 <template>
   <v-img :src="background">
-    <v-container fluid grid-list-xl>
+    <v-container grid-list-xl>
       <v-layout align-end justify-center row fill-height>
         <v-flex xs8 align-end flexbox>
           <h1>Maadwalk Games</h1>
@@ -46,3 +46,5 @@ export default {
   })
 };
 </script>
+
+
