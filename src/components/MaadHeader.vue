@@ -1,12 +1,11 @@
 <template>
   <v-toolbar>
     <v-toolbar-title
-      style="cursor: pointer"
+      style="cursor: pointer;"
       class="headline text-uppercase"
       v-on:click="$router.push('/')"
     >
-      <span>Maadwalk</span>
-      <span class="font-weight-light">Games</span>
+      <v-img :src="logo" style="width:200px"></v-img>
     </v-toolbar-title>
     <v-spacer></v-spacer>
 
@@ -41,8 +40,10 @@ export default {
         { title: "Mercenary TD", route: "mercenary-td" },
         { title: "About", route: "about" },
         { title: "Team", route: "team" },
-        { title: "Contact", route: "contact" }
-      ]
+        { title: "Contact", route: "contact" },
+        { title: "Data Policy", route: "data-policy" }
+      ],
+      logo: require("@/assets/Logga.png")
     };
   },
 
