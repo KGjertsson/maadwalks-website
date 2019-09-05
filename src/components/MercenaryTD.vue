@@ -1,6 +1,6 @@
 <template>
-  <v-img :src="background" style="height: 100%">
-    <v-container grid-list-xl fill-height>
+  <v-container style="padding: 0px; margin: 0px" id="mercenary container" fluid>
+    <v-img :src="background">
       <v-layout align-center justify-center>
         <v-flex xs8 sm6>
           <v-card flat tile style="background-color: transparent;">
@@ -17,14 +17,14 @@
           </v-card>
         </v-flex>
       </v-layout>
-    </v-container>
-  </v-img>
+    </v-img>
+  </v-container>
 </template>
 
 <script>
 export default {
   data: () => ({
-    background: require("@/assets/16503_edited.png")
+    background: require("@/assets/maadround.jpg")
   })
 };
 </script>

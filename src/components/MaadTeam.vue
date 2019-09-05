@@ -3,7 +3,7 @@
     <v-container grid-list-xl fill-height>
       <v-layout align-center justify-center row fill-height style="height: 100%">
         <v-flex xs12 sm12>
-          <v-flex xs12 sm6 offset-sm3>
+          <v-flex xs12 sm8 offset-sm2>
             <h1>Maadwalk Games</h1>
             <span>
               Maadwalk Games consists of a small and dedicated team brought together by a shared love for Warcraft III and
@@ -96,10 +96,10 @@ export default {
       {
         name: "Konrad Gjertsson",
         title: "Web Developer",
-        src: require("@/assets/jag.jpg")
+        src: require("@/assets/konrad.jpg")
       }
     ],
-    background: require("@/assets/16503_edited.png")
+    background: require("@/assets/maadround.jpg")
   })
 };
 </script>

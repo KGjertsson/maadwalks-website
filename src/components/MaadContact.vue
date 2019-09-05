@@ -26,7 +26,7 @@
 <script>
 export default {
   data: () => ({
-    background: require("@/assets/16503_edited.png")
+    background: require("@/assets/maadround.jpg")
   })
 };
 </script>

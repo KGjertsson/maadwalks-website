@@ -38,7 +38,6 @@ export default {
     return {
       menu: [
         { title: "Mercenary TD", route: "mercenary-td" },
-        { title: "About", route: "about" },
         { title: "Team", route: "team" },
         { title: "Contact", route: "contact" },
         { title: "Data Policy", route: "data-policy" }
