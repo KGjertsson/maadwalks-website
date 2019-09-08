@@ -37,7 +37,6 @@ export default {
   data() {
     return {
       menu: [
-        { title: "Mercenary TD", route: "mercenary-td" },
         { title: "Team", route: "team" },
         { title: "Contact", route: "contact" },
         { title: "Data Policy", route: "data-policy" }

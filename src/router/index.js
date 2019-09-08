@@ -2,7 +2,6 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 
 import Home from "@/components/Home.vue";
-import MercenaryTD from "@/components/MercenaryTD.vue";
 import Team from "@/components/MaadTeam.vue";
 import Contact from "@/components/MaadContact.vue";
 import DataPolicy from "@/components/MaadDataPolicy.vue";
@@ -15,11 +14,6 @@ export default new VueRouter({
       path: "/",
       component: Home,
       name: "home"
-    },
-    {
-      path: "/mercenary-td",
-      component: MercenaryTD,
-      name: "mercenary-td"
     },
     {
       path: "/team",
