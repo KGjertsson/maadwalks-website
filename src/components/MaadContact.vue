@@ -1,11 +1,11 @@
 <template>
-  <v-img :src="background" style="height: 100% ">
-    <v-container grid-list-xl fill-height>
-      <v-layout align-center justify-center row fill-height style="height: 100%">
-        <v-flex xs8 sm6>
-          <v-card flat tile style="background-color: transparent;">
-            <h1 style="margin-bottom: 20px">Contact Maadwalk Games:</h1>
-            <p>
+  <v-layout align-center justify-center>
+    <v-flex xs6 md6 lg6 xl6>
+      <v-card flat style="background-color: transparent;">
+        <v-card-title primary-title class="justify-center">
+          <div>
+            <h1>Contact the Team</h1>
+            <p style="margin-bottom: 00px">
               Email us at
               <a
                 style="cursor: pointer;"
@@ -16,11 +16,11 @@
               Reach out at our subreddit:
               <a href="http://reddit.com/r/maadwalk">r/MaadWalk</a>
             </p>
-          </v-card>
-        </v-flex>
-      </v-layout>
-    </v-container>
-  </v-img>
+          </div>
+        </v-card-title>
+      </v-card>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
