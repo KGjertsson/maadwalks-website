@@ -54,4 +54,7 @@ export default {
 </script>
 
 <style>
+.v-toolbar__content {
+  padding-left: 0px;
+}
 </style>

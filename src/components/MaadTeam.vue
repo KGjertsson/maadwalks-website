@@ -49,9 +49,6 @@
               <span class="headline white--text" v-text="card.title"></span>
             </v-flex>
             <v-spacer></v-spacer>
-            <v-btn icon onclick="window.open('mailto:konrad.gjertsson@protonmail.com')">
-              <v-icon>email</v-icon>
-            </v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
