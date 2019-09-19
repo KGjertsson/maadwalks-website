@@ -4,7 +4,7 @@
       <v-card color="#385F73" dark>
         <v-img class="white--text" :src="maadjump_img">
           <v-card-text class="white--text">
-            <div class="headline mb-2">Maadjump</div>You better be good at jumping or be patient you nerdy fuck.
+            <div class="headline mb-2">Animal Jump</div>You better be good at jumping or be patient you nerdy fuck.
           </v-card-text>
           <v-card-actions>
             <v-btn
