@@ -9,7 +9,7 @@
               Email us at
               <a
                 style="cursor: pointer;"
-                onclick="window.open('mailto:konrad.gjertsson@protonmail.com')"
+                onclick="window.open('mailto:Maadwalk@gmail.com')"
               >maadwalk@gmail.com</a>
             </p>
             <p>
