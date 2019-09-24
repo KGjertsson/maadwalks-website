@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-layout align-center justify-center row fill-height style="height: 100%">
-      <v-flex xs10 sm10 md6 lg6 xl6>
+      <v-flex xs10 sm10 md10 lg8 xl8>
         <h1>Maadwalk Games</h1>
         <span>
           Maadwalk Games consists of a small and dedicated team brought together by a shared love for Warcraft III and
@@ -27,6 +27,9 @@
               <span class="headline white--text" v-text="card.title"></span>
             </v-flex>
             <v-spacer></v-spacer>
+            <v-btn icon :onclick="card.email">
+              <v-icon>email</v-icon>
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -49,6 +52,9 @@
               <span class="headline white--text" v-text="card.title"></span>
             </v-flex>
             <v-spacer></v-spacer>
+            <v-btn icon :onclick="card.email">
+              <v-icon>email</v-icon>
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -59,53 +65,40 @@
 <script>
 export default {
   data: () => ({
-    cards: [
-      {
-        title: "Pre-fab homes",
-        src: "https://cdn.vuetifyjs.com/images/cards/house.jpg",
-        flex: 12
-      },
-      {
-        title: "Favorite road trips",
-        src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-        flex: 6
-      },
-      {
-        title: "Best airlines",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        flex: 6
-      }
-    ],
     cardsRowOne: [
       {
         name: "Alex Lindström",
         title: "Game Developer",
-        src: require("@/assets/alex.jpg")
+        src: require("@/assets/alex.jpg"),
+        email: "alex@maadwalk.com"
       },
       {
         name: "Markus Winroth",
         title: "Game Developer",
-        src: require("@/assets/markus.jpg")
+        src: require("@/assets/markus.jpg"),
+        email: "markus@maadwalk.com"
       },
       {
         name: "Daniel Karlsson",
         title: "Game Developer",
-        src: require("@/assets/daniel.jpg")
+        src: require("@/assets/daniel.jpg"),
+        email: "daniel@maadwalk.com"
       }
     ],
     cardsRowTwo: [
       {
         name: "Anton Anderzén",
         title: "Game Developer",
-        src: require("@/assets/anton.jpg")
+        src: require("@/assets/anton.jpg"),
+        email: "anton@maadwalk.com"
       },
       {
         name: "Konrad Gjertsson",
         title: "Web Developer",
-        src: require("@/assets/konrad.jpg")
+        src: require("@/assets/konrad.jpg"),
+        email: "konrad@maadwalk.com"
       }
-    ],
-    background: require("@/assets/maadround.jpg")
+    ]
   })
 };
 </script>
