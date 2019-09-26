@@ -4,9 +4,9 @@
       <v-flex xs10 sm10 md10 lg8 xl8>
         <h1>Maadwalk Games</h1>
         <span>
-          Maadwalk Games consists of a small and dedicated team brought together by a shared love for Warcraft III and
-          Legion TD. Our flagship product, Mercenary TD, is a remake of the original WC3 game for android, which maintains
-          the true spirit of Legion TD yet filled with exciting new content.
+          We are a bunch of like minded people with a passion for both playing and creating games.
+          Maadwalk Games AB is our way of realizing our dreams, where we can let our creativity run
+          free and where we can create the games we want!
         </span>
       </v-flex>
     </v-layout>
@@ -69,19 +69,19 @@ export default {
       {
         name: "Alex Lindström",
         title: "Game Developer",
-        src: require("@/assets/alex.jpg"),
+        src: require("@/assets/alex_small.jpg"),
         email: "alex@maadwalk.com"
       },
       {
         name: "Markus Winroth",
         title: "Game Developer",
-        src: require("@/assets/markus.jpg"),
+        src: require("@/assets/markus_small.jpg"),
         email: "markus@maadwalk.com"
       },
       {
         name: "Daniel Karlsson",
         title: "Game Developer",
-        src: require("@/assets/daniel.jpg"),
+        src: require("@/assets/daniel_small.jpg"),
         email: "daniel@maadwalk.com"
       }
     ],
@@ -89,7 +89,7 @@ export default {
       {
         name: "Anton Anderzén",
         title: "Game Developer",
-        src: require("@/assets/anton.jpg"),
+        src: require("@/assets/anton_small.jpg"),
         email: "anton@maadwalk.com"
       },
       {

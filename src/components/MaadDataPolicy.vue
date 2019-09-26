@@ -92,7 +92,7 @@
     </v-layout>
     <v-layout align-end justify-center row fill-height>
       <v-flex xs8 md6 align-end flexbox>
-        <h1>5. How do we use the data?</h1>
+        <h1>6. How to access collected data or close your account</h1>
         <span>
           You can withdraw your consent to our data collection, this will however unfortunately
           result in us removing your account along with all the personal data collected. All

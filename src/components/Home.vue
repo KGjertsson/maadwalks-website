@@ -2,7 +2,7 @@
   <v-card class="mx-auto">
     <v-container class="pa-2" fluid>
       <v-card color="#385F73" dark>
-        <v-img class="white--text" :src="maadjump_img" style="width: 400px">
+        <v-img class="white--text image-card" :src="maadjump_img">
           <v-card-text class="white--text">
             <div class="headline mb-2">Animal Jump</div>
           </v-card-text>
@@ -17,7 +17,7 @@
     </v-container>
     <v-container class="pa-2" fluid>
       <v-card color="#385F73" dark>
-        <v-img class="white--text" :src="legions_img">
+        <v-img class="white--text image-card" :src="legions_img">
           <v-card-text class="white--text">
             <div class="headline mb-2">Legions TD</div>
           </v-card-text>
@@ -41,3 +41,15 @@ export default {
   })
 };
 </script>
+
+<style scoped>
+.image-card {
+  width: 400px;
+}
+
+@media only screen and (max-width: 500px) {
+  .image-card {
+    width: 300px;
+  }
+}
+</style>
