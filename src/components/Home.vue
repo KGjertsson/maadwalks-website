@@ -4,7 +4,7 @@
       <v-card color="#385F73" dark>
         <v-img class="white--text image-card" :src="maadjump_img">
           <v-card-text class="white--text">
-            <div class="headline mb-2">Animal Jump</div>
+            <div class="headline mb-2">Mad Escape</div>
           </v-card-text>
           <v-card-actions>
             <v-btn
