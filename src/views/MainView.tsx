@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -32,6 +33,10 @@ const useStyles = makeStyles((theme: Theme) =>
     media: {
       height: '340px',
     },
+    hyperlink: {
+      color: '#FFFFFF',
+      textDecoration: 'none',
+    },
   })
 );
 
@@ -50,9 +55,14 @@ export default function MainView() {
             title='Contemplative Reptile'
           ></CardMedia>
           <CardActions className={classes.overlay}>
-            <Button size='small' color='primary'>
-              Play
-            </Button>
+            <a
+              className={classes.hyperlink}
+              href='https://play.google.com/store/apps/details?id=com.maadwalk.maadjump'
+            >
+              <Button size='small' color='primary'>
+                Play
+              </Button>
+            </a>
           </CardActions>
         </CardActionArea>
       </Card>
