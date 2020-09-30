@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Grid from '@material-ui/core/Grid';
+import RedditIcon from '@material-ui/icons/Reddit';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -61,6 +62,7 @@ export default function ButtonAppBar() {
 
   const ButtonGroup = () => (
     <Grid
+      item
       container
       spacing={3}
       direction='row'
@@ -87,30 +89,45 @@ export default function ButtonAppBar() {
   return (
     <div className={classes.root}>
       <AppBar position='static'>
-        <Toolbar>
-          <MaadwalkLogo />
-          <ButtonGroup />
-          <div className={classes.menu}>
-            <Button
-              aria-controls='simple-menu'
-              aria-haspopup='true'
-              onClick={handleClick}
-            >
-              Open Menu
-            </Button>
-            <Menu
-              id='simple-menu'
-              anchorEl={anchorEl}
-              keepMounted
-              open={Boolean(anchorEl)}
-              onClose={handleClose}
-            >
-              <MenuItem onClick={handleClose}>{teamViewName}</MenuItem>
-              <MenuItem onClick={handleClose}>{contactViewName}</MenuItem>
-              <MenuItem onClick={handleClose}>{dataPolicyViewName}</MenuItem>
-            </Menu>
-          </div>
-        </Toolbar>
+        {/* <Toolbar> */}
+        <Grid
+          container
+          direction='row'
+          justify='space-between'
+          alignItems='center'
+          style={{ height: '80px' }}
+        >
+          <Grid item>
+            <MaadwalkLogo />
+          </Grid>
+          <Grid item>
+            <ButtonGroup></ButtonGroup>
+          </Grid>
+          <Grid item>
+            <RedditIcon style={{ margin: '10px' }}></RedditIcon>
+          </Grid>
+          {/* <div className={classes.menu}>
+              <Button
+                aria-controls='simple-menu'
+                aria-haspopup='true'
+                onClick={handleClick}
+              >
+                Open Menu
+              </Button>
+              <Menu
+                id='simple-menu'
+                anchorEl={anchorEl}
+                keepMounted
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+              >
+                <MenuItem onClick={handleClose}>{teamViewName}</MenuItem>
+                <MenuItem onClick={handleClose}>{contactViewName}</MenuItem>
+                <MenuItem onClick={handleClose}>{dataPolicyViewName}</MenuItem>
+              </Menu>
+            </div> */}
+        </Grid>
+        {/* </Toolbar> */}
       </AppBar>
     </div>
   );
