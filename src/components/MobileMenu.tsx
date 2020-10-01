@@ -11,7 +11,11 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const Menu = () => {
+const teamViewName = 'TEAM';
+const contactViewName = 'CONTACT';
+const dataPolicyViewName = 'DATA POLICY';
+
+const MobileMenu = () => {
   const classes = useStyles();
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -48,4 +52,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default MobileMenu;

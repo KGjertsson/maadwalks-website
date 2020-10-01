@@ -1,49 +1,44 @@
 import React from 'react';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Grid from '@material-ui/core/Grid';
+import { AppBar, Grid, Hidden } from '@material-ui/core';
 
 import NavigationButtons from './NavigationButtons';
 import ContactIcons from './ContatIcons';
 import MaadwalkLogo from './MaadwalkLogo';
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      flexGrow: 1,
-    },
-    menu: {
-      position: 'absolute',
-      right: 0,
-    },
-  })
-);
+import MobileMenu from './MobileMenu';
+import useStyles from '../styles/HeaderStyles';
 
 const Header = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <AppBar position='static'>
-        <Grid
-          container
-          direction='row'
-          justify='space-around'
-          alignItems='center'
-          style={{ height: '80px' }}
-        >
-          <Grid item>
-            <MaadwalkLogo />
-          </Grid>
+    <AppBar position='static' className={classes.appBar}>
+      <Grid
+        container
+        direction='row'
+        justify='space-around'
+        alignItems='center'
+        className={classes.grid}
+      >
+        <Grid item>
+          <MaadwalkLogo />
+        </Grid>
+        <Hidden xsDown>
           <Grid item>
             <NavigationButtons />
           </Grid>
+        </Hidden>
+        <Hidden xsDown>
           <Grid item>
             <ContactIcons />
           </Grid>
-        </Grid>
-      </AppBar>
-    </div>
+        </Hidden>
+        <Hidden smUp>
+          <Grid item>
+            <MobileMenu />
+          </Grid>
+        </Hidden>
+      </Grid>
+    </AppBar>
   );
 };
 

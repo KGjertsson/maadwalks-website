@@ -1,23 +1,16 @@
 import React from 'react';
 import Card from '@material-ui/core/Card';
 import { Link } from 'react-router-dom';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    logo: {
-      width: '200px',
-    },
-  })
-);
+import useStyles from '../styles/MaadwalkLogoStyles';
 
 const MaadwalkLogo = () => {
   const classes = useStyles();
   return (
-    <Card style={{ width: '200px', height: '80px' }}>
+    <Card className={classes.card}>
       <Link to='/'>
         <img
-          className={classes.logo}
+          className={classes.img}
           src={require('../static/Logga.png')}
           alt='Italian Trulli'
         ></img>
