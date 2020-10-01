@@ -1,15 +1,8 @@
 import React from 'react';
 import { Button, Menu, MenuItem } from '@material-ui/core';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import MenuIcon from '@material-ui/icons/Menu';
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    menu: {
-      position: 'absolute',
-      right: 0,
-    },
-  })
-);
+import useStyles from '../styles/MobileMenuStyles';
 
 const teamViewName = 'TEAM';
 const contactViewName = 'CONTACT';
@@ -35,7 +28,7 @@ const MobileMenu = () => {
         aria-haspopup='true'
         onClick={handleClick}
       >
-        Open Menu
+        <MenuIcon />
       </Button>
       <Menu
         id='simple-menu'
