@@ -18,6 +18,7 @@ const useStyles = makeStyles((_: Theme) =>
       marginLeft: 16,
       marginRight: 16,
       backgroundColor: 'white',
+      borderRadius: '0px',
     },
   })
 );
