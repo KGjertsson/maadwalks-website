@@ -35,27 +35,49 @@ const TeamView = () => {
   const classes = useStyles();
 
   return (
-    <Grid
-      container
-      direction='row'
-      justify='center'
-      alignItems='center'
-      className={classes.grid}
-    >
-      {teamMembers.map((teamInfo) => {
-        return (
-          <Grid item key={teamInfo.name}>
-            <Card>
-              <CardHeader title={teamInfo.name} />
-              <CardMedia
-                style={{ height: '267px', width: '400px' }}
-                image={teamInfo.image}
-              />
-              {teamInfo.name}
-            </Card>
-          </Grid>
-        );
-      })}
+    <Grid container direction='column' justify='center' alignItems='center'>
+      <Grid
+        item
+        xs={12}
+        sm={10}
+        md={10}
+        lg={7}
+        xl={7}
+        style={{ margin: '10px' }}
+      >
+        We are a bunch of like minded people with a passion for both playing and
+        creating games. Maadwalk Games AB is our way of realizing our dreams,
+        where we can let our creativity run free and where we can create the
+        games we want!
+      </Grid>
+      <Grid
+        container
+        item
+        direction='row'
+        justify='center'
+        alignItems='center'
+        className={classes.grid}
+        xs={12}
+        sm={10}
+        md={10}
+        lg={8}
+        xl={8}
+      >
+        {teamMembers.map((teamInfo) => {
+          return (
+            <Grid item key={teamInfo.name}>
+              <Card style={{ margin: '5px' }}>
+                <CardHeader title={teamInfo.name} />
+                <CardMedia
+                  style={{ height: '267px', width: '300px' }}
+                  image={teamInfo.image}
+                />
+                {teamInfo.name}
+              </Card>
+            </Grid>
+          );
+        })}
+      </Grid>
     </Grid>
   );
 };

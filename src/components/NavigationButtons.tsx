@@ -19,7 +19,7 @@ const NavigationButtons = () => {
           container
           spacing={3}
           direction='row'
-          justify='space-around'
+          justify='center'
           alignItems='center'
           className={classes.grid}
         >
@@ -28,7 +28,7 @@ const NavigationButtons = () => {
               <Button
                 disableElevation
                 className={classes.navigationButton}
-                variant='contained'
+                variant='text'
                 component={Link}
                 to={buttonLink}
                 key={buttonText}
