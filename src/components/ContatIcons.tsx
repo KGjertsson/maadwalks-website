@@ -18,10 +18,17 @@ const ContactIcons = () => {
         className={classes.grid}
       >
         <Grid item>
-          <RedditIcon className={classes.icon} />
+          <a
+            href='https://www.reddit.com/r/MAADWALK/'
+            style={{ color: 'inherit' }}
+          >
+            <RedditIcon className={classes.icon} />
+          </a>
         </Grid>
         <Grid item>
-          <MailIcon className={classes.icon} />
+          <a href='mailto:maadwalk@gmail.com' style={{ color: 'inherit' }}>
+            <MailIcon className={classes.icon} />
+          </a>
         </Grid>
       </Grid>
     </Card>

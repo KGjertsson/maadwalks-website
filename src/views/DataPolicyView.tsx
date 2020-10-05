@@ -19,7 +19,7 @@ export default function DataPolicyView() {
         xl={paperXl}
         style={{ margin: '10px' }}
       >
-        <Paper>
+        <Paper elevation={0}>
           <h1>1. About Us</h1>
           <span>
             We are Maadwalk Games Inc. This Policy applies to websites operated
@@ -41,7 +41,7 @@ export default function DataPolicyView() {
         xl={paperXl}
         style={{ margin: '10px' }}
       >
-        <Paper>
+        <Paper elevation={0}>
           <h1>2. What is defined as personal information?</h1>
           <span>
             Personal information can be any information relating to an
@@ -62,7 +62,7 @@ export default function DataPolicyView() {
         xl={paperXl}
         style={{ margin: '10px' }}
       >
-        <Paper>
+        <Paper elevation={0}>
           <h1>3. When do we collect data?</h1>
           <span>
             We will collect data about you when you use our Services, including
@@ -83,7 +83,7 @@ export default function DataPolicyView() {
         xl={paperXl}
         style={{ margin: '10px' }}
       >
-        <Paper>
+        <Paper elevation={0}>
           <h1>4. What data do we collect?</h1>
           <span>
             We use data that you have explicitly provided to us in different
@@ -121,7 +121,7 @@ export default function DataPolicyView() {
         xl={paperXl}
         style={{ margin: '10px' }}
       >
-        <Paper>
+        <Paper elevation={0}>
           <h1>5. How do we use the data?</h1>
           <span>
             We may use the data we collect from you and from your use of our
@@ -164,7 +164,7 @@ export default function DataPolicyView() {
         xl={paperXl}
         style={{ margin: '10px' }}
       >
-        <Paper>
+        <Paper elevation={0} style={{ paddingBottom: '100px' }}>
           <h1>6. How to access collected data or close your account</h1>
           <span>
             You can withdraw your consent to our data collection, this will
