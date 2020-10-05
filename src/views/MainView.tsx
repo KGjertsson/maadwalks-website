@@ -1,41 +1,101 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
+import { Grid, Card, Paper } from '@material-ui/core';
 
 import GameCard from '../components/GameCard';
 import useStyles from '../styles/MainViewStyles';
+
+const largeCardxs = 12;
+const largeCardsm = 8;
+const largeCardmd = 8;
+const largeCardlg = 6;
+const largeCardxl = 6;
+
+const smallCardxs = 12;
+const smallCardsm = 4;
+const smallCardmd = 4;
+const smallCardlg = 3;
+const smallCardxl = 3;
 
 const MainView = () => {
   const classes = useStyles();
 
   return (
-    <Grid
-      container
-      direction='column'
-      alignItems='center'
-      justify='flex-start'
-      className={classes.grid}
-    >
-      <Grid item>
-        <GameCard
-          gameTitle={'newTD'}
-          gameImage={require('../static/flower.jpeg')}
-        />
-      </Grid>
-      <Grid item container direction='row' alignItems='center' justify='center'>
-        <Grid item>
-          <GameCard
-            gameTitle={'Maadjump'}
-            gameImage={require('../static/flower.jpeg')}
-          />
+    <div className={classes.root}>
+      <Grid
+        container
+        spacing={1}
+        direction='column'
+        justify='center'
+        alignItems='center'
+      >
+        <Grid
+          container
+          item
+          direction='row'
+          justify='center'
+          alignItems='center'
+          spacing={3}
+        >
+          <Grid
+            item
+            xs={largeCardxs}
+            sm={largeCardsm}
+            md={largeCardmd}
+            lg={largeCardlg}
+            xl={largeCardxl}
+          >
+            <GameCard
+              gameTitle={'Legion Arena'}
+              gameImage={require('../static/games/maadjump.webp')}
+              gameLink={
+                'https://play.google.com/store/apps/details?id=com.maadwalk.maadjump'
+              }
+            />
+          </Grid>
         </Grid>
-        <Grid item>
-          <GameCard
-            gameTitle={'Mercenary TD'}
-            gameImage={require('../static/flower.jpeg')}
-          />
+        <Grid
+          container
+          item
+          direction='row'
+          justify='center'
+          alignItems='center'
+          spacing={3}
+        >
+          <Grid
+            item
+            xs={smallCardxs}
+            sm={smallCardsm}
+            md={smallCardmd}
+            lg={smallCardlg}
+            xl={smallCardxl}
+          >
+            <GameCard
+              gameTitle={'Maadjump'}
+              gameImage={require('../static/games/maadjump.webp')}
+              gameLink={
+                'https://play.google.com/store/apps/details?id=com.maadwalk.maadjump'
+              }
+            />
+          </Grid>
+          <Grid
+            item
+            xs={smallCardxs}
+            sm={smallCardsm}
+            md={smallCardmd}
+            lg={smallCardlg}
+            xl={smallCardxl}
+          >
+            <GameCard
+              gameTitle={'Mercenary TD'}
+              gameImage={require('../static/games/maadjump.webp')}
+              gameLink={
+                'https://play.google.com/store/apps/details?id=com.maadwalk.maadjump'
+              }
+            />
+          </Grid>
         </Grid>
       </Grid>
-    </Grid>
+    </div>
   );
 };
 

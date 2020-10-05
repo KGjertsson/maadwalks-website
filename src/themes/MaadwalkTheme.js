@@ -5,7 +5,7 @@ import grey from '@material-ui/core/colors/grey';
 const maadwalkTheme = createMuiTheme({
   palette: {
     primary: {
-      main: red[600],
+      main: '#b90000',
     },
     secondary: {
       light: '#FFFFFF',
