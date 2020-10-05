@@ -1,12 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button, Menu, MenuItem } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 
 import useStyles from '../styles/MobileMenuStyles';
 
-const teamViewName = 'TEAM';
-const contactViewName = 'CONTACT';
-const dataPolicyViewName = 'DATA POLICY';
+const menuButtons = [
+  ['TEAM', '/team'],
+  ['DATA POLICY', '/data-policy'],
+];
 
 const MobileMenu = () => {
   const classes = useStyles();
@@ -37,9 +39,16 @@ const MobileMenu = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>{teamViewName}</MenuItem>
-        <MenuItem onClick={handleClose}>{contactViewName}</MenuItem>
-        <MenuItem onClick={handleClose}>{dataPolicyViewName}</MenuItem>
+        {menuButtons.map(([menuButtonName, menuButtonPath]) => (
+          <MenuItem
+            component={Link}
+            to={menuButtonPath}
+            onClick={handleClose}
+            key={menuButtonName}
+          >
+            {menuButtonName}
+          </MenuItem>
+        ))}
       </Menu>
     </div>
   );

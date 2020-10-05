@@ -1,6 +1,6 @@
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((_: Theme) =>
+const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     card: {
       width: '200px',
@@ -12,6 +12,7 @@ const useStyles = makeStyles((_: Theme) =>
     },
     icon: {
       padding: '2px',
+      color: theme.palette.primary.main,
     },
   })
 );

@@ -66,13 +66,13 @@ const TeamView = () => {
         {teamMembers.map((teamInfo) => {
           return (
             <Grid item key={teamInfo.name}>
-              <Card style={{ margin: '5px' }}>
+              <Card style={{ margin: '5px', borderRadius: '0px' }}>
                 <CardHeader title={teamInfo.name} />
                 <CardMedia
                   style={{ height: '267px', width: '300px' }}
                   image={teamInfo.image}
                 />
-                {teamInfo.name}
+                {teamInfo.title}
               </Card>
             </Grid>
           );

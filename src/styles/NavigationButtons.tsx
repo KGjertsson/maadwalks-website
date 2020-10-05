@@ -15,8 +15,8 @@ const useStyles = makeStyles((_: Theme) =>
       padding: '0px',
     },
     navigationButton: {
-      marginLeft: 16,
-      marginRight: 16,
+      // marginLeft: 16,
+      // marginRight: 16,
       backgroundColor: 'white',
       borderRadius: '0px',
     },
