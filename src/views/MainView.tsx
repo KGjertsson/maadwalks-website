@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Card, Paper } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 
 import GameCard from '../components/GameCard';
 import useStyles from '../styles/MainViewStyles';
