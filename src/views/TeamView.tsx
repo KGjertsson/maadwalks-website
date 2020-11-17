@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Card, CardMedia, CardHeader } from '@material-ui/core';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 import useStyles from '../styles/TeamViewStyles';
 
@@ -8,26 +9,31 @@ const teamMembers = [
     name: 'Alex Lindström',
     image: require('../static/team/alex_small.jpg'),
     title: 'Game Developer',
+    linkedinLink: 'https://www.linkedin.com/in/alex-lindstr%C3%B6m-a8245987/',
   },
   {
     name: 'Anton Anderzén',
     image: require('../static/team/anton_small.jpg'),
     title: 'Game Developer',
+    linkedinLink: 'https://www.linkedin.com/in/anton-anderz%C3%A9n/',
   },
   {
     name: 'Daniel Karlsson',
     image: require('../static/team/daniel_small.jpg'),
     title: 'Game Developer',
+    linkedinLink: 'https://www.linkedin.com/in/daniel-karlsson-00ba1b181/',
   },
   {
     name: 'Markus Winroth',
     image: require('../static/team/markus_small.jpg'),
     title: 'Game Developer',
+    linkedinLink: 'https://www.linkedin.com/in/markuswinroth/',
   },
   {
     name: 'Konrad Makhool Gjertsson',
     image: require('../static/team/konrad.jpg'),
     title: 'Web Developer',
+    linkedinLink: 'https://www.linkedin.com/in/konrad-gjertsson/',
   },
 ];
 
@@ -67,7 +73,17 @@ const TeamView = () => {
           return (
             <Grid item key={teamInfo.name}>
               <Card style={{ margin: '5px', borderRadius: '0px' }}>
-                <CardHeader title={teamInfo.name} />
+                <CardHeader
+                  title={teamInfo.name}
+                  action={
+                    <a
+                      className={classes.hyperlink}
+                      href={teamInfo.linkedinLink}
+                    >
+                      <LinkedInIcon className={classes.linkedin} />
+                    </a>
+                  }
+                />
                 <CardMedia
                   style={{ height: '267px', width: '300px' }}
                   image={teamInfo.image}
@@ -83,3 +99,9 @@ const TeamView = () => {
 };
 
 export default TeamView;
+
+{
+  /* <a className={classes.hyperlink} href={gameLink}>
+                    <LinkedInIcon className={classes.linkedin}
+                  </a></a> */
+}

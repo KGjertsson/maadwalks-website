@@ -6,6 +6,8 @@ const useStyles = makeStyles((theme: Theme) =>
       textAlign: 'center',
       color: theme.palette.text.secondary,
       margin: '10px',
+      borderRadius: 0,
+      position: 'relative',
     },
     media: {
       height: 0,
@@ -16,13 +18,11 @@ const useStyles = makeStyles((theme: Theme) =>
       top: '20px',
       left: '20px',
       backgroundColor: 'white',
+      borderRadius: 0,
     },
     hyperlink: {
       color: '#FFFFFF',
       textDecoration: 'none',
-    },
-    avatar: {
-      backgroundColor: theme.palette.primary.main,
     },
   })
 );

@@ -1,20 +1,7 @@
 import React from 'react';
-import {
-  Card,
-  CardMedia,
-  CardActionArea,
-  Button,
-  CardActions,
-  Avatar,
-  CardHeader,
-} from '@material-ui/core';
+import { Card, CardMedia, Button } from '@material-ui/core';
 
 import useStyles from '../styles/GameCardStyles';
-
-import ShareIcon from '@material-ui/icons/Share';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-import IconButton from '@material-ui/core/IconButton';
 
 interface GameCardProps {
   gameTitle: string;
@@ -26,18 +13,11 @@ const GameCard = ({ gameTitle, gameImage, gameLink }: GameCardProps) => {
   const classes = useStyles();
 
   return (
-    <Card className={classes.card}>
-      <CardHeader
-        avatar={
-          <Avatar aria-label='recipe' className={classes.avatar}>
-            <a className={classes.hyperlink} href={gameLink}>
-              <Button>Play</Button>
-            </a>
-          </Avatar>
-        }
-        title={gameTitle}
-      />
+    <Card className={classes.card} id='mario'>
       <CardMedia className={classes.media} image={gameImage} />
+      <a className={classes.hyperlink} href={gameLink}>
+        <Button className={classes.overlay}>{gameTitle}</Button>
+      </a>
     </Card>
   );
 };
