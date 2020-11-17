@@ -70,7 +70,7 @@ const MainView = () => {
             xl={smallCardxl}
           >
             <GameCard
-              gameTitle={'Maadjump'}
+              gameTitle={'Mad Escape'}
               gameImage={require('../static/games/maadjump.webp')}
               gameLink={
                 'https://play.google.com/store/apps/details?id=com.maadwalk.maadjump'
@@ -86,10 +86,10 @@ const MainView = () => {
             xl={smallCardxl}
           >
             <GameCard
-              gameTitle={'Mercenary TD'}
+              gameTitle={'Legions TD'}
               gameImage={require('../static/games/maadjump.webp')}
               gameLink={
-                'https://play.google.com/store/apps/details?id=com.maadwalk.maadjump'
+                'https://play.google.com/store/apps/details?id=com.MAADWALK.Mercenary'
               }
             />
           </Grid>
