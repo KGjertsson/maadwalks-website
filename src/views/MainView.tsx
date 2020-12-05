@@ -46,7 +46,7 @@ const MainView = () => {
           >
             <GameCard
               gameTitle={'Legion Arena'}
-              gameImage={require('../static/games/maadjump.webp')}
+              gameImage={require('../static/games/legion_arena.png')}
               gameLink={
                 'https://play.google.com/store/apps/details?id=com.maadwalk.maadjump'
               }
