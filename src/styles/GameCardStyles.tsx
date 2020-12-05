@@ -8,10 +8,14 @@ const useStyles = makeStyles((theme: Theme) =>
       margin: '10px',
       borderRadius: 0,
       position: 'relative',
+      // width: '750px',
+      // height: '500px',
     },
     media: {
       height: 0,
       paddingTop: '56.25%', // 16:9
+      // width: '750px',
+      // height: '500px',
     },
     overlay: {
       position: 'absolute',

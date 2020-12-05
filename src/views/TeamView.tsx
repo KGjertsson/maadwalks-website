@@ -99,9 +99,3 @@ const TeamView = () => {
 };
 
 export default TeamView;
-
-{
-  /* <a className={classes.hyperlink} href={gameLink}>
-                    <LinkedInIcon className={classes.linkedin}
-                  </a></a> */
-}

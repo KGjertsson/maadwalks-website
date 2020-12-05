@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Card, Paper } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 
 import GameCard from '../components/GameCard';
 import useStyles from '../styles/MainViewStyles';
@@ -46,7 +46,7 @@ const MainView = () => {
           >
             <GameCard
               gameTitle={'Legion Arena'}
-              gameImage={require('../static/games/maadjump.webp')}
+              gameImage={require('../static/games/legion_arena.png')}
               gameLink={
                 'https://play.google.com/store/apps/details?id=com.maadwalk.maadjump'
               }
