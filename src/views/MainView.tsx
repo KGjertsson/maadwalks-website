@@ -70,7 +70,7 @@ const MainView = () => {
             xl={smallCardxl}
           >
             <GameCard
-              gameTitle={'Maad Jump'}
+              gameTitle={'Mad Jump'}
               gameImage={require('../static/games/maadjump.png')}
               gameLink={
                 'https://play.google.com/store/apps/details?id=com.maadwalk.maadjump'
