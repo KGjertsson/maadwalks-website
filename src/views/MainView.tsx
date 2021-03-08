@@ -45,7 +45,7 @@ const MainView = () => {
             xl={largeCardxl}
           >
             <GameCard
-              gameTitle={'Legion Arena'}
+              gameTitle={'Mercenary Arena'}
               gameImage={require('../static/games/legion_arena.png')}
               gameLink={
                 'https://play.google.com/store/apps/details?id=com.maadwalk.maadjump'
@@ -70,8 +70,8 @@ const MainView = () => {
             xl={smallCardxl}
           >
             <GameCard
-              gameTitle={'Mad Escape'}
-              gameImage={require('../static/games/maadjump.webp')}
+              gameTitle={'Maad Jump'}
+              gameImage={require('../static/games/maadjump.png')}
               gameLink={
                 'https://play.google.com/store/apps/details?id=com.maadwalk.maadjump'
               }
@@ -86,7 +86,7 @@ const MainView = () => {
             xl={smallCardxl}
           >
             <GameCard
-              gameTitle={'Legions TD'}
+              gameTitle={'Mercenary TD'}
               gameImage={require('../static/games/maadjump.webp')}
               gameLink={
                 'https://play.google.com/store/apps/details?id=com.MAADWALK.Mercenary'
