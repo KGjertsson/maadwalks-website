@@ -48,7 +48,7 @@ const MainView = () => {
               gameTitle={'Mercenary Arena'}
               gameImage={require('../static/games/legion_arena.png')}
               gameLink={
-                'https://play.google.com/store/apps/details?id=com.maadwalk.maadjump'
+                'https://play.google.com/store/apps/details?id=com.maadwalk.OurLastHope'
               }
             />
           </Grid>
