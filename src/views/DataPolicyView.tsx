@@ -17,7 +17,7 @@ export default function DataPolicyView() {
         md={paperMd}
         lg={paperLg}
         xl={paperXl}
-        style={{ margin: '10px' }}
+        style={{ margin: '10px', width: '100%' }}
       >
         <Paper elevation={0}>
           <h1>1. About Us</h1>
@@ -42,7 +42,7 @@ export default function DataPolicyView() {
         md={paperMd}
         lg={paperLg}
         xl={paperXl}
-        style={{ margin: '10px' }}
+        style={{ margin: '10px', width: '100%' }}
       >
         <Paper elevation={0}>
           <h1>2. What is defined as personal information?</h1>
@@ -63,7 +63,7 @@ export default function DataPolicyView() {
         md={paperMd}
         lg={paperLg}
         xl={paperXl}
-        style={{ margin: '10px' }}
+        style={{ margin: '10px', width: '100%' }}
       >
         <Paper elevation={0}>
           <h1>3. When do we collect data?</h1>
@@ -84,7 +84,7 @@ export default function DataPolicyView() {
         md={paperMd}
         lg={paperLg}
         xl={paperXl}
-        style={{ margin: '10px' }}
+        style={{ margin: '10px', width: '100%' }}
       >
         <Paper elevation={0}>
           <h1>4. What data do we collect?</h1>
@@ -133,7 +133,7 @@ export default function DataPolicyView() {
         md={paperMd}
         lg={paperLg}
         xl={paperXl}
-        style={{ margin: '10px' }}
+        style={{ margin: '10px', width: '100%' }}
       >
         <Paper elevation={0}>
           <h1>5. How do we use the data?</h1>

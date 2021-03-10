@@ -31,7 +31,7 @@ const teamMembers = [
   },
   {
     name: 'Konrad Makhool Gjertsson',
-    image: require('../static/team/konrad.jpg'),
+    image: require('../static/team/konrad.jpeg'),
     title: 'Web Developer',
     linkedinLink: 'https://www.linkedin.com/in/konrad-gjertsson/',
   },
@@ -67,12 +67,12 @@ const TeamView = () => {
         sm={10}
         md={10}
         lg={8}
-        xl={8}
+        xl={6}
       >
         {teamMembers.map((teamInfo) => {
           return (
             <Grid item key={teamInfo.name}>
-              <Card style={{ margin: '5px', borderRadius: '0px' }}>
+              <Card style={{ margin: '10px', borderRadius: '0px' }}>
                 <CardHeader
                   title={teamInfo.name}
                   action={
